@@ -97,7 +97,7 @@ function playAudio() {
   audio.addEventListener('timeupdate', function() {
     const currentTimePers = (audio.currentTime / audio.duration) * 100;
     player.value = currentTimePers;
-  })
+  });
   
 
 
