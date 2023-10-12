@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>js30#1.2-audio-player</title>
+</head>
+<body>
+    <img src="./assets/img/dontstartnow.png" id="background">
+    <audio src="./assets/audio/dontstartnow.mp3" id="song"></audio>
+    <div class="wrapper">
+        <div class="audio-player">
+            <div class="box">
+             <img src="./assets/img/dontstartnow.png" id="thumbnail" style="transform: scale(1);">
+             <button class="play"><img src="./assets/svg/play.png" width="50px" alt=""></button>
+             <span class="artist">Dua Lipa</span>
+             <span class="song-title">Don't Start Now</span>
+             <img src="./assets/svg/backward.png" id="backward">
+             <img src="./assets/svg/forward.png" id="forward">
+             <input type="range" id="player" min="o" max="203.389388" value="0" onchange="changeProgressBar()" wdf="id0">
+             <div class="currentTime"></div>
+             <div class="durationTime"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
